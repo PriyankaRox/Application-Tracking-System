@@ -1,0 +1,142 @@
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.auth-formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3); */
+  text-align: center;
+  background: rgba(10, 99, 57, 0.45);
+  box-shadow: 10px 10px 5px -8px rgb(0 0 0 / 69%);
+}
+
+.logtext {
+  font-size: 1em;
+  color: #fff;
+  margin: 1.7em 0 0.7em;
+  text-align: left;
+  font-family: "Times New Roman", serif;
+  font-weight: 900;
+  background: transparent;
+}
+
+.auth-formContent h3 {
+  margin: 10px 0px;
+}
+
+.auth-formContent form {
+  margin: 10px;
+}
+
+.form-extended {
+  width: 20% !important;
+}
+.form-extended span {
+  width: 100% !important;
+}
+
+.auth-formfooter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e4e1e1;
+  height: 60px;
+  border-radius: 0px 0px 10px 10px;
+  background: rgba(105, 102, 102, 0.45);
+}
+
+.bgImage {
+  background-image: url("https://wallpaperaccess.com/full/1503226.jpg");
+  height: 725px;
+  width: 1280px;
+}
+
+.logbutton {
+  background: transparent;
+  height: 45px;
+  line-height: 40px;
+  border: 2px solid white;
+  display: inline-block;
+  float: none;
+  text-align: center;
+  width: 120px;
+  padding: 0px !important;
+  font-size: 14px;
+  color: #fff;
+  animation: bouncy 5s infinite linear;
+  position: relative;
+}
+
+@keyframes bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+.textPass {
+  color: #2471a3;
+  margin-left: 4em;
+  padding-right: 10em;
+}
+
+.container {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 1em;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  padding-right: 10em;
+  border-radius: 1em;
+}
+.fp {
+  font-size: 3em;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  background: transparent;
+}
+/* Control the left side */
+.right {
+  left: 0;
+  background-image: url("forgetpass.jpg");
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+
+.pp {
+  margin-left: 10em;
+  padding-right: 10em;
+}

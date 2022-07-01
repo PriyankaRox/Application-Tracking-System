@@ -1,0 +1,56 @@
+###
+GET http://localhost:8000
+
+
+###
+POST http://localhost:8000/auth/signup
+content-type: application/json
+
+{
+  "name":"test" ,
+  "email": "myemail3@gmail.com" ,
+  "password" : "mypass"
+}
+
+
+###
+POST http://localhost:8000/auth/login
+content-type: application/json
+
+{
+  "email": "abhishek@spakengineering.com" ,
+  "password" : "123456"
+}
+
+
+###
+PUT http://localhost:8000/candidate/candidate-updated-status/
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGFueWEgS29jaGFyIiwiZW1haWwiOiJ0YW55YUBzcGFrZW5naW5lZXJpbmcuY29tIiwicG9zaXRpb24iOiJIUiIsImlkIjoiNjI0ZDZmZjA0YWZlZDY3NGM5ODRhN2YzIiwiaWF0IjoxNjUwMjY4NDExfQ.Rf8Tt-Cczrh1pdIGO2gxknA80sPBQRDGZIMaT9CBydQ
+
+{  
+  "candidateID":"625e8c670d5927d6aa134d5a",
+  "empid":"623e9cabfc6984f25f15e70b",
+  "laststatus":"devScreening"
+}
+
+
+###
+PUT http://localhost:8000/candidate/candidate-updated-message/
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGFueWEgS29jaGFyIiwiZW1haWwiOiJ0YW55YUBzcGFrZW5naW5lZXJpbmcuY29tIiwicG9zaXRpb24iOiJIUiIsImlkIjoiNjI0ZDZmZjA0YWZlZDY3NGM5ODRhN2YzIiwiaWF0IjoxNjUyMjY5MTg4fQ.erVReOki7cDFpn7E4etU-CInHqdhE_5vWj3NNRn3o7M
+
+{
+  "candidateID":"627b9d8b571994d88e8fcfe7",
+  "laststatus":"onBoard",
+  "empMessage":"proceed",
+  "isCompleted": "true"
+}
+
+###
+GET http://localhost:8000/candidate/resume
+Content-Type: : application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGFueWEgS29jaGFyIiwiZW1haWwiOiJ0YW55YUBzcGFrZW5naW5lZXJpbmcuY29tIiwicG9zaXRpb24iOiJIUiIsImlkIjoiNjI0ZDZmZjA0YWZlZDY3NGM5ODRhN2YzIiwiaWF0IjoxNjUxNzM4MzE3fQ.MgUcEmho1Fqh9inX37vymb-bEKPuN-3sSETy_vyelaA
+
+
+
